@@ -1,3 +1,3 @@
-Git repository for optum stratethon - season 3
-Non-adherence using conditions csv : For extracting isadherent column
-Patients with adherent csv : Combined Patients and adherent csv files
+## Git repository for optum stratethon - season 3<br>
+### File : Discription<br>
+Data-Preprocessing (Generating Non-adherence column) : For extracting isadherent columns and merging in patients.csv
