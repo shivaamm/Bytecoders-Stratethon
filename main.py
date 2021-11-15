@@ -30,13 +30,10 @@ def callmsg(data):
 def scheduleCall(data):
     if data['time1']:
         sched = BackgroundScheduler()
-        print("Morning")
         hr = int(data['time1'].split(":")[0])
         mn = int(data['time1'].split(":")[1])
         sched.add_job(lambda: callmsg(data), 'cron', day_of_week='mon-sun', hour=hr, minute=mn, timezone=ist)
         sched.start()
-        # job1.remove()
-        # sched.shutdown()
     if data['time2']:
         sched = BackgroundScheduler()
         print("Afternoon")
