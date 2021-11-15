@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="login-box">
+      <br><br><br>
         <h3>Reminder Scheduler</h3>
         <form action="{{ url_for("formData")}}" method="post">
           <div class="user-box">
@@ -22,7 +23,7 @@
             <label>Medicine<span style="color: red;">*</span></label>
           </div>
           <div class="user-box">
-                <input type="number" name="Phno" required>
+                <input type="text" name="Phno" required>
                 <label>Phone number<span style="color: red;">*</span></label>
           </div>
           
@@ -40,7 +41,7 @@
             <label style="color: whitesmoke;">Evening</label>
           </div>
           <button style="background: #111D2A;border: 0px;padding-top: 0;" type="submit">
-            <a style="color: whitesmoke;background-color: #111D2A;">
+            <a style="color: whitesmoke;cursor: pointer;">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -51,123 +52,5 @@
           
         </form>
       </div>
-
-
-
-
-
-
-
-
-
-    <!-- <div class="login-box">
-        <h2>Login</h2>
-        <form action="{{ url_for("formData")}}" method="post">
-          <div class="user-box">
-            <input type="text" name="Name" required>
-            <label>Name</label>
-          </div>
-          <div class="user-box">
-            <input type="text" name="Medicine" required>
-            <label>Medicine</label>
-          </div>
-             <div class="user-box">
-            <input type="number" name="Phno" required>
-            <label>Phone number</label>
-          </div>
-          <div class="user-box">
-            <div class="user-box">
-                <label class="form-head" for="Time">Select time</label>
-                <br><br>
-            </div>
-            <div class="user-box">
-                <input type="checkbox" name="Time" value="Morning">
-                <label>Morning</label>
-                <input class="times1" type="text" name="times1" value="" placeholder="Channel details"  class="form-control times1">
-            </div>
-             <div class="user-box">
-                <input type="checkbox" name="Time" value="Afternoon">
-                <label>Afternoon</label>
-                <input class="times2" type="text" name="times2" value="" placeholder="Channel details"  class="form-control times2">
-            </div>
-            <div class="user-box">
-                <input type="checkbox" name="Time" value="Evening">
-                <label>Evening</label>
-                <input class="times3" type="text" name="times3" value="" placeholder="Channel details"  class="form-control times3">
-            </div>
-          </div>
-          <button href="" type="submit" >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Submit
-          </button>
-        </form>
-      </div> -->
-</body>
-<!-- <div class="container" id="registration-form">
-    <div class="image"></div>
-    <div class="frm">
-        <h3>Products</h3>
-        <form action="{{ url_for("formData")}}" method="post">
-            <div class="form-group">
-                  <label for="Label" class="my-1 mr-2 form-head" for="inlineFormCustomSelectPref">Select the facial Product</label>
-                    <select name="label" id="products" class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                        <option selected>Select...</option>
-                        <option class="label-name" value="Face Moisturizer">Face Moisturizer</option>
-                        <option class="label-name" value="Face Wash And Cleanser">Face Wash And Cleanser</option>
-                        <option class="label-name" value="Sunscreen">Sunscreen</option>
-                    </select>
-            </div>
-            <div class="form-group" style="margin-left: -18px;">
-                <div class="form-check">
-                <label class="form-head" for="skin">Skin Type</label><br>
-                <input class="" type="checkbox" id="Combination" name="skin" value="Combination">
-                <label class="label-name" for="Combination">Combination</label><br>
-                <input type="checkbox" id="Dry" name="skin" value="Dry">
-                <label class="label-name" for="Dry">Dry</label><br>
-                <input type="checkbox" id="Normal" name="skin" value="Normal">
-                <label class="label-name" for="Normal">Normal</label><br>
-                <input type="checkbox" id="Oily" name="skin" value="Oily">
-                <label class="label-name" for="Oily">Oily</label><br>
-                <input type="checkbox" id="Sensitive" name="skin" value="Sensitive">
-                <label class="label-name" for="Sensitive">Sensitive</label><br>
-                </div>
-            </div>
-            <div class="form-group">
-                 <div data-role="rangeslider">
-                  <label for="price-min" class="form-head">Price:</label> <br>
-                  <input type="range" name="price-min" id="price-min" min="0" max="1000" value=0 class="slider" onchange="updatePriceMin(this.value);">
-                  <label for="price-max"></label>
-                  <input type="range" name="price-max" id="price-max" min="0" max="1000" value=1000 class="slider" onchange="updatePriceMax(this.value);">
-                  <br>
-                  <span class="label-name">Min : </span><span id="minPrice" class="label-name" style="padding-right: 55px;">0</span>
-                  <span class="label-name">Max : </span><apan id="maxPrice" class="label-name">1000</span>
-                </div> 
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg float-left">Submit</button>
-            </div>
-        </form>
-    </div>
-</div> -->
-<script>
-    $('.times1').hide();
-    $('.checkbox input:checkbox').on('click', function(){
-        $(this).closest('.checkbox').find('.times1').toggle();
-    })
-
-    $('.times2').hide();
-    $('.checkbox input:checkbox').on('click', function(){
-        $(this).closest('.checkbox').find('.times2').toggle();
-    })
-
-    $('.times3').hide();
-    $('.checkbox input:checkbox').on('click', function(){
-        $(this).closest('.checkbox').find('.times3').toggle();
-    })
-</script>
-<!-- partial -->
 </body>
 </html>

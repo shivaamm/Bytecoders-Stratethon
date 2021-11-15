@@ -165,3 +165,7 @@ body {
     bottom: 100%;
   }
 }
+select{
+  color: white;
+  background-color: #111D2A;
+}

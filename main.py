@@ -8,7 +8,7 @@ import threading
 from apscheduler.schedulers.background import BackgroundScheduler
 
 account_sid = 'AC86129d7f26adf184f62f21db6c4eb8b1'   #Replace with your account_sid'
-auth_token = 'd8a01efe784c1f30e4d6633a97d04b14'    #Replace with your auth_token'
+auth_token = '7dc394031a14f4a084695598a8f90a8b'    #Replace with your auth_token'
 client = Client(account_sid, auth_token)
 ist = pytz.timezone('Asia/Kolkata')
 
@@ -68,14 +68,15 @@ def formData():
         data = {}
         data['Name'] = request.form.get("Name")
         data['Medicine'] = request.form.get("Medicine")
-        data['Phno'] = "+91"+str(request.form.get("Phno"))
+        data['Phno'] = "+91"+(request.form.get("Phno"))
         data['time1'] = request.form.get("time1")
         data['time2'] = request.form.get("time2")
         data['time3'] = request.form.get("time3")
         threading.Timer(5.0, scheduleCall(data)).start()
-        # while True:
-        #     scheduleCall(data)
-        # return jsonify(data)
     return render_template('form.html')
+
+@app.route('/appointment')
+def appointment():
+    return render_template("appointment.html")  
 if __name__ == '__main__':
     app.run()
