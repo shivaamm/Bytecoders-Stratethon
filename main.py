@@ -51,8 +51,29 @@ def scheduleCall(data):
         t2 = lambda: callmsg(data)
         sched.add_job(t2, 'cron', day_of_week='mon-sun', hour=hr, minute=mn, timezone=ist)
         sched.start()
+
+def callforRem(data):
+    tosay = '<Response><Say>Hi '+data['name']+'. This is a scheduled call from Medcall to remind you to buy '+data['medname']+'. Make sure you get it, thank you.</Say></Response>'
+    call = client.calls.create(
+          from_='+18507530637',     #Replace with the phone number that you got from Twilio
+          twiml=tosay,
+          to=data['Phno']   #Phone number that you add on Twilio
+    )
+    print(call.sid)
+
+def scheduleReminder(data):
+    sched = BackgroundScheduler()
+    hr = int(data['time'].split(":")[0])
+    mn = int(data['time'].split(":")[1])
+
+    yr = int(data['date'].split("-")[0])
+    m = int(data['date'].split("-")[1])
+    dt = int(data['date'].split("-")[2])
+    t = lambda: callforRem(data)
+    sched.add_job(t, 'date', run_date=datetime(yr, m, dt, hr, mn, 0), timezone=ist)
+    sched.start()
     
-app = Flask(__name__)
+app = Flask(_name_)
 @app.after_request
 def add_header(r):
     """
@@ -87,8 +108,25 @@ def formData():
         redirect("https://med-call.herokuapp.com/")
     return render_template('form.html')
 
+@app.route('/medicinereminder', methods =["GET", "POST"])
+def medicinereminder():
+    if request.method == "POST":
+        data = {}
+        data['name'] = request.form.get("name")
+        data['medname'] = request.form.get("medname")
+        data['Phno'] = "+91"+(request.form.get("Phno"))
+        data['date'] = request.form.get("date")
+        data['time'] = request.form.get("time")
+        print(data)
+        threading.Timer(5.0, scheduleReminder(data)).start()
+        redirect("https://med-call.herokuapp.com/")
+    return render_template("medicine-reminder.html") 
+
 @app.route('/appointment')
 def appointment():
     return render_template("appointment.html")  
-if __name__ == '__main__':
+
+     
+
+if _name_ == '_main_':
     app.run()

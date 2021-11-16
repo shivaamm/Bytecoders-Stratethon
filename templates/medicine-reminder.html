@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedCall</title>
+    <link rel="icon" href="../static/images/logo.jpeg" type="image">
+    <link rel="stylesheet" href="../static/css/form.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="login-box">
+        <h3>Meds Renewal</h3> <br>
+        <form action="{{ url_for("medicinereminder")}}" method="post">
+          <div class="user-box">
+            <input type="text" name="name" id="name" required>
+            <label>Name<span style="color: red;">*</span></label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="Phno" required>
+            <label>Phone number<span style="color: red;">*</span></label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="medname" id="medname" required>
+            <label>Meds Name<span style="color: red;">*</span></label>
+          </div>
+          <div class="user-box">
+            <label>Reminder Date<span style="color: red;">*</span></label> <br>
+            <input type="date" name="date" id="date" required>
+          </div>
+          <div class="user-box">
+            <label style="color: whitesmoke;">Reminder Time<span style="color: red;">*</span></label> <br>
+            <input type="time" name="time" id="time" required>
+          </div>
+          <button type="submit">
+            <a style="color: whitesmoke;cursor: pointer;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+          </button>
+        </form>
+      </div>
+</body>
+<script src="../static/js/jquery.min.js"></script> 
+<script src="../static/js/jspdf.min.js"></script> 
+<script src="../static/js/appointment.js"></script>
+<!-- partial -->
+</body>
+</html>
