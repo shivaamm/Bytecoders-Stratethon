@@ -70,6 +70,7 @@ def formData():
         data['time2'] = request.form.get("time2")
         data['time3'] = request.form.get("time3")
         threading.Timer(5.0, scheduleCall(data)).start()
+        redirect("https://med-call.herokuapp.com/")
     return render_template('form.html')
 
 @app.route('/appointment')

@@ -42,5 +42,6 @@ doc.text(75, 175, time);
 doc.text(75, 203, name);
 doc.text(75, 228, hospital);
 
-doc.save('test.pdf');
+doc.save('appointment.pdf');
+location.href = "https://med-call.herokuapp.com/"
 });

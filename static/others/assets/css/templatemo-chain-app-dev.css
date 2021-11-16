@@ -1976,6 +1976,9 @@ responsive
   .header-area {
     background-color: #fff;
   }
+  .main-banner{
+    background-color: #34C4F9;
+  }
   .main-banner:after {
     display: none;
   } 
@@ -2080,6 +2083,9 @@ responsive
 }
 
 @media (max-width: 767px) {
+  .main-banner{
+    background-color: #34C4F9;
+  }
   .the-clients .naccs .menu div {
     text-align: center;
   }

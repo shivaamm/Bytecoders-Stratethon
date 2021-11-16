@@ -11,8 +11,8 @@
 </head>
 <body>
     <div class="login-box">
-      <br><br><br>
-        <h3>Reminder Scheduler</h3>
+      <br><br>
+        <h4>Reminder Scheduler</h4>
         <form action="{{ url_for("formData")}}" method="post">
           <div class="user-box">
             <input type="text" name="Name" required>
@@ -27,7 +27,7 @@
                 <label>Phone number<span style="color: red;">*</span></label>
           </div>
           
-          <h3>Schedule Time</h3>
+          <h4>Schedule Time</h4>
          <div class="user-box">
             <input type="time" name="time1">
             <label style="color: whitesmoke;">Morning</label>
@@ -40,7 +40,7 @@
             <input type="time" name="time3">
             <label style="color: whitesmoke;">Evening</label>
           </div>
-          <button style="background: #111D2A;border: 0px;padding-top: 0;" type="submit">
+          <button type="submit">
             <a style="color: whitesmoke;cursor: pointer;">
                 <span></span>
                 <span></span>

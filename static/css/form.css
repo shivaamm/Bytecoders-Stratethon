@@ -20,7 +20,7 @@ body {
   border-radius: 10px;
 }
 
-.login-box h3 {
+.login-box h4,h3 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
@@ -98,6 +98,9 @@ body {
   height: 2px;
   background: linear-gradient(90deg, transparent, #03e9f4);
   animation: btn-anim1 1s linear infinite;
+}
+button{
+  background: #111D2A;border: 0px;padding-top: 0;
 }
 
 @keyframes btn-anim1 {
