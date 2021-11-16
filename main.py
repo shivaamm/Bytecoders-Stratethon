@@ -73,7 +73,8 @@ def scheduleReminder(data):
     sched.add_job(t, 'date', run_date=datetime(yr, m, dt, hr, mn, 0), timezone=ist)
     sched.start()
     
-app = Flask(_name_)
+
+app = Flask(__name__)
 @app.after_request
 def add_header(r):
     """
@@ -128,5 +129,5 @@ def appointment():
 
      
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run()
