@@ -45,7 +45,10 @@ Worried about appointments? Medcall helps you book Hassle-free Appointments from
 
 ## MedCall reminds you about your dose on time by giving a Call reminder with Automated Voice Text - Hi shivam, Please take your Medicine...and so on.
 <p align="center">
-<img src="https://user-images.githubusercontent.com/59584173/142248719-f736695e-3818-4fcb-a0db-70b1b2546ae1.png" width="400" height="600">    <img src="https://user-images.githubusercontent.com/59584173/142265694-e5684b0e-b1d2-41d8-8909-bc9a7d231e7e.png" width="320" height="600"> 
+ You can add your medicine timimgs according to your schedule.<br>
+<img src="https://user-images.githubusercontent.com/59584173/142273442-9586fd69-c381-43c2-adde-a12b186b6b32.png" width="400" height="600">    <img src="https://user-images.githubusercontent.com/59584173/142265694-e5684b0e-b1d2-41d8-8909-bc9a7d231e7e.png" width="320" height="600"> 
+
+
 </p>
  
 ## With a five minute delayed whatsapp message reminder because we make sure you don't miss even a single dose. 
