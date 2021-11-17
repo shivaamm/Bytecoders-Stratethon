@@ -21,6 +21,10 @@ Worried about appointments? Medcall helps you book Hassle-free Appointments from
 
 ## Checkout the WebApp
 <p align="center">
+<img src="https://user-images.githubusercontent.com/59584173/142269197-818a15dc-29c7-4c61-9a7c-3baccecd2ea2.png" width="350" height="550">
+<img src="https://user-images.githubusercontent.com/59584173/142269601-97618232-eba8-46bd-bb15-aa8a88f9fe30.png" width="350" height="550">
+</p>
+<p align="center">
 <img src="https://user-images.githubusercontent.com/59584173/142248361-e6e1d38c-8d8b-4d02-b8b4-6bdd2de3dd04.png" width="80%" height="80%">
 </p>
 <!-- ![Screenshot (136)](https://user-images.githubusercontent.com/59584173/142248361-e6e1d38c-8d8b-4d02-b8b4-6bdd2de3dd04.png) -->
