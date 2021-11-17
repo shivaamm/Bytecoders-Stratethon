@@ -53,8 +53,13 @@ Worried about appointments? Medcall helps you book Hassle-free Appointments from
 <img src="https://user-images.githubusercontent.com/59584173/142270572-deba39e3-6920-453b-8874-cefb92ac05f3.png" width="320" height="600"> 
 </p>
 
-
+## Book your appointment with your known hospitals and doctors. Download your appointment letter now!!
+<p align="center">
 <img src="https://user-images.githubusercontent.com/59584173/142249363-88f82d78-198a-4cac-b377-48de7da68571.png" width="400" height="600">    <img src="https://user-images.githubusercontent.com/59584173/142249161-9ab35eb8-0dc8-48b2-8414-74eb72b13cc4.png" width="400" height="600">
+ </p>
 
-<img src="https://user-images.githubusercontent.com/59584173/142249701-b506bee6-03c6-4df2-ad9b-47e00e008257.png" width="400" height="600">
-
+## Worried about remembering prescription refil date? Don't Worry we got your back!
+<p align="center">
+ Just enter the meds renewal date and time and medcall reminds you on call so that you never goes into the category of Non-Adherent. <br>
+<img src="https://user-images.githubusercontent.com/59584173/142249701-b506bee6-03c6-4df2-ad9b-47e00e008257.png" width="400" height="600">   <img src="https://user-images.githubusercontent.com/59584173/142272425-24a1f77e-caa2-47c8-be2c-4a81cb056793.png" width="320" height="600">
+</p>
