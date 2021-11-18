@@ -66,3 +66,10 @@ Worried about appointments? Medcall helps you book Hassle-free Appointments from
  Just enter the meds renewal date and time and medcall reminds you on call so that you never goes into the category of Non-Adherent. <br>
 <img src="https://user-images.githubusercontent.com/59584173/142249701-b506bee6-03c6-4df2-ad9b-47e00e008257.png" width="400" height="600">   <img src="https://user-images.githubusercontent.com/59584173/142272425-24a1f77e-caa2-47c8-be2c-4a81cb056793.png" width="320" height="600">
 </p>
+
+## Tech Stack Used
+* Python
+* Flask : As web server
+* Twilio :  API to send and receive calls and messages
+* Apscheduler : scheduling calls and messages
+* HTML, CSS, JavaScript
