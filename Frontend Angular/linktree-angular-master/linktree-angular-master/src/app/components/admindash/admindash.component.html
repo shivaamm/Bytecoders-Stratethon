@@ -1,0 +1,38 @@
+<body>
+	<!-- partial:index.partial.html -->
+	<div class="container">
+		<form action="" method="">
+		<h1>Medcall Panel
+			<small>Medicine leaf/card</small>
+		</h1>
+		
+		<div class='input-control'>
+	  <input id='x' type='text' class='input-control__input' placeholder='Placeholder!' />
+	  <label for='x' class='input-control__label'>
+		Medicine
+	  </label>
+	</div>
+		
+		<div class="avatar-upload">
+			<div class="avatar-edit">
+				<!-- <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" /> -->
+				<input type="file" id="imageUpload" name="FUImage" style="width: 100px;font-size: 16px;" accept=".png, .jpg, .jpeg" (change)="handleFileInput($event.target.files)"> 
+				<label for="imageUpload"></label>
+			</div>
+			<div class="avatar-preview">
+				<div id="imagePreview" style="background-image: url();">
+					<img src="{{ImageBaseData}}" height="180" width="180" alt="">
+				</div>
+			</div>
+		</div>
+	
+	
+	<div class="hero">
+		<div class="card-container">
+			<button type="button" class="btn btn-danger pull-left" style="margin-left: 10px;" (click)="editProficPic()">Upload</button> 
+		</div>
+	</div>
+		
+	</form>
+	</div>
+</body>
