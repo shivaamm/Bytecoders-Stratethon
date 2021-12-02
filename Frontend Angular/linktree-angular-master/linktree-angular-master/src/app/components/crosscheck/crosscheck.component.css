@@ -4,6 +4,15 @@ body {
     font-family: 'Varela Round', sans-serif;
     font-size: 13px;
 }
+
+tr{
+    font-size: medium;
+    font-weight: bold;
+}
+td{
+    font-size: medium;
+    font-weight: lighter;
+}
 img{
     width: 230px;
     height: auto;
