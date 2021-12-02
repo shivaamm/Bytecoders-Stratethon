@@ -15,7 +15,7 @@ const routes: Routes = [
   {path:':username',component:DashboardComponent},
   {path:'stats/:username',component:StatsComponent,canActivate:[AuthGuard]},
   {path:'admin/:username',component:AdmindashComponent,canActivate:[AuthGuard]},
-  {path:'admins/post',component:CrosscheckComponent,canActivate:[AuthGuard]}
+  {path:'admins/post',component:CrosscheckComponent}
 ];
 
 @NgModule({
