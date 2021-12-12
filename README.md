@@ -79,3 +79,5 @@ Worried about appointments? Medcall helps you book Hassle-free Appointments from
 * Taking care of you is our responsibility now.
 ![image](https://user-images.githubusercontent.com/59584173/142492534-7ba2287b-f6b2-4d93-8375-3da76115c717.png)
 ![image](https://user-images.githubusercontent.com/59584173/142492575-ae3d6b25-c6d5-44fd-94ff-e5257cf699b2.png)
+
+<h1> Runners Up of Optum Stratethon - Season 3 🥳😎✨</h1>
