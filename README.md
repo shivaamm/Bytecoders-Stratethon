@@ -3,7 +3,8 @@
 
 <h1 align="center">MedCall - A perfect reminder</h1>
 <h3 align="center">MedCall One stop solution for your meds tracking.</h3>
-<a href="https://med-call.herokuapp.com/" target="_blank"><button> LIVE HERE</button></a>
+<a href="https://med-call.herokuapp.com/" target="_blank"><button> LIVE HERE</button></a><br>
+<a href="https://docs.google.com/presentation/d/17DITVg5c5THc35s57EnLpCQPImE4iTpbUdG6fnfA45k/edit?usp=sharing" target="_blank"><button> PPT's for Optum Stratethon - Season 3</button></a>
 </p>
 
 ## ❓ Problem Statement
